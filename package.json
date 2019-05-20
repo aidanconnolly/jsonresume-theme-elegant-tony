@@ -1,6 +1,6 @@
 {
-  "name": "jsonresume-theme-elegant-jali",
-  "version": "1.2.0",
+  "name": "jsonresume-theme-elegant-tony",
+  "version": "1.2.1",
   "description": "Modification of elegant theme for jsonresume",
   "main": "index.js",
   "scripts": {
@@ -12,19 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaliborc/jsonresume-theme-elegant.git"
+    "url": "https://github.com/TonyPapousek/jsonresume-theme-elegant-tony.git"
   },
   "keywords": [
     "jsonresume",
     "theme",
     "elegant"
   ],
-  "author": "Joao Cardoso <jaliborcpublic@gmail.com>",
+  "author": "Tony Papousek <tony@papousek.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jaliborc/jsonresume-theme-elegant/issues"
+    "url": "https://github.com/TonyPapousek/jsonresume-theme-elegant-tony/issues"
   },
-  "homepage": "https://github.com/jaliborc/jsonresume-theme-elegant",
+  "homepage": "https://github.com/TonyPapousek/jsonresume-theme-elegant-tony",
   "dependencies": {
     "chalk": "^2.4.1",
     "jsonresume-themeutils": "^1.4.3",
