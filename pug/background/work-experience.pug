@@ -22,12 +22,6 @@ unless _.isEmpty(resume.work)
                     span.space-right
                       |#{experience.startDate} - #{experience.endDate || 'Present'}
 
-                    if experience.duration
-                      span
-                        svg.icon-clock.mr-5
-                          use(xlink:href="#icon-clock")
-                        |#{experience.duration}
-
                 .mop-wrapper.space-bottom!= experience.summary
 
                 unless _.isEmpty(experience.highlights)
@@ -45,9 +39,3 @@ unless _.isEmpty(resume.work)
                     |&nbsp;#{experience.endDate}
                   else
                     strong= 'Currently Here'
-
-                if experience.duration
-                  p
-                    svg.icon-clock.mr-5
-                      use(xlink:href="#icon-clock")
-                    |#{experience.duration}
