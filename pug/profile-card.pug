@@ -1,5 +1,5 @@
 mixin profile_card_detail(icon, info, itemprop, icon_title)
-  .detail
+  .detail.col-sm-4
     span.icon(title=icon_title)
       svg.fs-lg(class="icon-" + icon)
         use(xlink:href="#icon-" + icon)
@@ -8,6 +8,7 @@ mixin profile_card_detail(icon, info, itemprop, icon_title)
         block
       else
         |#{info}
+  
 
 mixin social_links(profiles)
   each profile in profiles
@@ -32,8 +33,8 @@ section.col-md-3.card-wrapper.profile-card-wrapper.affix
 
     hr
 
-    .contact-details.clearfix
-      if resume.basics.computed_location
+    .contact-details.clearfix.row
+      if resume.basics.location.city && resume.basics.location.region
         +profile_card_detail("location", resume.basics.location.city + ', ' + resume.basics.location.region)
       if resume.basics.phone
         +profile_card_detail("phone", resume.basics.phone, "telephone")

@@ -390,7 +390,9 @@ svg {
     margin-top: 10px;
   }
 }
+
 @media (max-width: 768px) {
+  /* PDF Profile Card */
   .contact-details {
     text-align: center;
   }
@@ -415,15 +417,22 @@ svg {
     padding: 0 5px 0 0;
   }
 }
+
+.contact-details {
+  text-align: center;
+}
+
 .contact-details .detail .info {
   font-size: 0.8em;
   padding-right: 20px;
 }
+
+  /* PDF Profile Card */
 @media (max-width: 768px) {
   .contact-details .detail {
     position: relative;
     float: left;
-    width: 100%;
+    width: 33.3%;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
@@ -445,7 +454,7 @@ svg {
 @media (max-width: 992px) and (min-width: 768px) {
   .contact-details .detail {
     float: left;
-    width: 25%;
+    width: 33.3%;
   }
 }
 .social-link {
