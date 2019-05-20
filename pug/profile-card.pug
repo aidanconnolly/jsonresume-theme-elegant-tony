@@ -34,7 +34,7 @@ section.col-md-3.card-wrapper.profile-card-wrapper.affix
 
     .contact-details.clearfix
       if resume.basics.computed_location
-        +profile_card_detail("location", resume.basics.computed_location)
+        +profile_card_detail("location", resume.basics.location.city + ', ' + resume.basics.location.region)
       if resume.basics.phone
         +profile_card_detail("phone", resume.basics.phone, "telephone")
       if resume.basics.email
